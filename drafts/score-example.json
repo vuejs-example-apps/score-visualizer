@@ -1,0 +1,60 @@
+[
+    {
+        "voice_name": "piano left hand",
+        "voice_key": "Em",
+        "voice_clef": "bass",
+        "measures": [
+            {
+                "voices": [
+                    [
+                        {
+                            "tone": "E",
+                            "octave": 4,
+                            "duration": "1/8"
+                        },
+                        {
+                            "tone": "B",
+                            "octave": 3,
+                            "duration": "1/8"
+                        },
+                        {
+                            "tone": "E",
+                            "octave": 4,
+                            "duration": "1/8"
+                        },
+                        {
+                            "tone": "B",
+                            "octave": 3,
+                            "duration": "1/8"
+                        }
+                    ],
+                    [
+                        {
+                            "tone": "E",
+                            "octave": 3,
+                            "duration": "1/8"
+                        },
+                        {
+                            // rest
+                            "duration": "1/8"
+                        },
+                        {
+                            "tone": "G",
+                            "octave": 3,
+                            "duration": "1/8"
+                        },
+                        {
+                            // rest
+                            "duration": "1/8"
+                        }
+                    ]
+                ]
+            },
+        ]
+    }
+    {
+        "voice_name": "piano right hand",
+        "voice_key": "Em",
+        "voice_clef": "treble"
+    }
+]

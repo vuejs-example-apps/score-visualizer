@@ -1,0 +1,103 @@
+voice
+    .note
+        position absolute
+        font-size 10px
+        border-radius 5px
+
+        // appearance depends on the duration (ignore grouping for now)
+
+        &[data-duration=1/16]
+            // should look like a sixteenth note
+        &[data-duration=1/8]
+            // should look like an eigth note
+        &[data-duration=1/4]
+            // should look like a fourth note
+        &[data-duration=1/2]
+            // should look like a half note
+        &[data-duration=1]
+            // should look like a whole note
+
+    .measure.comparison
+        // opacity is supposed to dampen unchanged notes
+
+        .note
+            opacity 0.5
+
+            &[data-updated]
+                opacity 1
+
+
+    &[data-key=Em]
+        // coloring depends on the tonality
+
+        .note            
+            &[data-tone=E]
+                color red
+            &[data-tone=F#]
+                color orange
+            &[data-tone=G]
+                color yellow
+            &[data-tone=A]
+                color green
+            &[data-tone=B]
+                color lightblue
+            &[data-tone=C]
+                color blue
+            &[data-tone=D]
+                color violet
+
+    &[data-clef=bass]
+        // positioning depends on the clef
+
+        .note            
+
+            &[data-octave=2]
+
+                &[data-tone=E]
+                    top 0em
+                &[data-tone=F#]
+                    top .5em
+                &[data-tone=G]
+                    top 1em
+                &[data-tone=A]
+                    top 1.5em
+                &[data-tone=B]
+                    top 2em
+                &[data-tone=C]
+                    top 2.5em
+                &[data-tone=D]
+                    top 3em
+
+            &[data-octave=3]
+
+                &[data-tone=E]
+                    top 3.5em
+                &[data-tone=F#]
+                    top 4em
+                &[data-tone=G]
+                    top 4.5em
+                &[data-tone=A]
+                    top 5em
+                &[data-tone=B]
+                    top 5.5em
+                &[data-tone=C]
+                    top 6em
+                &[data-tone=D]
+                    top 6.5em
+
+            &[data-octave=4]
+
+                &[data-tone=E]
+                    top 7em
+                &[data-tone=F#]
+                    top 7.5em
+                &[data-tone=G]
+                    top 8em
+                &[data-tone=A]
+                    top 8.5em
+                &[data-tone=B]
+                    top 9em
+                &[data-tone=C]
+                    top 9.5em
+                &[data-tone=D]
+                    top 10em
